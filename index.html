@@ -9,12 +9,13 @@
 
     <link rel="stylesheet" href="headers.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="header.js"></script>
     <script src="https://kit.fontawesome.com/d557b1238d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 </head>
 <body>
-    <header class="p-3 bg-dark text-white">
+    <header class="p-3 bg-dark text-white header" id="myHeader">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -36,7 +37,11 @@
             </form>
     
             <div class="text-end">
-              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <a href="login.html" class="btn btn-outline-primary me-2 text-white
+              " target="_blank">
+                Login
+
+              </a>
               <button type="button" class="btn btn-warning">Sign-up</button>
             </div>
           </div>
@@ -118,7 +123,7 @@
 
         <div class="px-4 py-5" id="hanging-icons">
             <h2 class=" pb-2 border-bottom">Hanging icons</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
               <div class="col d-flex align-items-start">
                 <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                   <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
@@ -146,6 +151,18 @@
               <div class="col d-flex align-items-start">
                 <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                   <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+                </div>
+                <div>
+                  <h3 class="fs-2">Featured title</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="btn btn-primary">
+                    Primary button
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
                 </div>
                 <div>
                   <h3 class="fs-2">Featured title</h3>
@@ -235,13 +252,13 @@
 
     </main>
     <footer class="text-center text-lg-start text-white bg-dark footer-bs" >
-        <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+        <section class="d-flex justify-content-between p-4" style="background-color: #3b5998">
              <!-- Left -->
             <div class="me-5">
                 <span>Get connected with us on social networks:</span>
             </div>
             <!-- Right -->
-            <div class="social-networks-icon">
+            <div>
                 <a href="" class="text-white me-4">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -274,10 +291,6 @@
 
                     <a href="#" class="text-white text-uppercase fw-bold " style="text-decoration: none
                     ;">Greengrass</a>
-                    <hr
-                        class="mb-4 mt-0 d-inline-block mx-auto"
-                        style="width: 60px; background-color: #7c4dff; height: 2px"
-                        />
                     <p>
                       Here you can use rows and columns to organize your footer
                       content. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -292,7 +305,7 @@
                     <h6 class="text-uppercase fw-bold">Products</h6>
                     <hr
                         class="mb-4 mt-0 d-inline-block mx-auto"
-                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        style="width: 90px; background-color: #7c4dff; height: 2px"
                         />
                     <p>
                       <a href="#!" class="text-white">MDBootstrap</a>
@@ -315,7 +328,7 @@
                     <h6 class="text-uppercase fw-bold">Useful links</h6>
                     <hr
                         class="mb-4 mt-0 d-inline-block mx-auto"
-                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        style="width: 108px; background-color: #7c4dff; height: 2px"
                         />
                     <p>
                       <a href="#!" class="text-white ">Your Account</a>
@@ -338,7 +351,7 @@
                     <h6 class="text-uppercase fw-bold">Contact</h6>
                     <hr
                         class="mb-4 mt-0 d-inline-block mx-auto"
-                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        style="width: 73px; background-color: #7c4dff; height: 2px"
                         />
                     <p><i class="fas fa-home mr-3"></i> Montreal,Quebec, Canada</p>
                     <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
@@ -354,7 +367,7 @@
         </section>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2023 Copyright:
-            <a class="text-white" href="#">Greengrass.com</a
+            <a class="text-white" href="#" style="text-decoration: none;">Greengrass.com</a
         >
         </div>
     </footer>
